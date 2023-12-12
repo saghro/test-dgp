@@ -5,9 +5,9 @@ interface FormulaireProps {
   onSearch: (values: { prixMinimum: number; prixMaximum: number }) => void;
 }
 const FormulaireRecherche: React.FC<FormulaireProps> = ({ onSearch }) => {
-  const [totalProduits, setTotalProduits] = useState<number>(10);
+  const [totalProduits, setTotalProduits] = useState<number>(12);
   const [prixMinimum, setPrixMinimum] = useState<number>(0);
-  const [prixMaximum, setPrixMaximum] = useState<number>(100);
+  const [prixMaximum, setPrixMaximum] = useState<number>(1000);
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -28,7 +28,6 @@ const FormulaireRecherche: React.FC<FormulaireProps> = ({ onSearch }) => {
       return;
     }
 
-    // Logique de recherche ici
   };
 
 

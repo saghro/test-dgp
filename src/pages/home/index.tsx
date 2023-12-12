@@ -4,7 +4,7 @@ import {useState} from "react";
 
 const HomePage = () => {
     const [prixMinimum, setPrixMinimum] = useState<number>(0);
-    const [prixMaximum, setPrixMaximum] = useState<number>(100);
+    const [prixMaximum, setPrixMaximum] = useState<number>(1000);
     const handleSearch = ({ prixMinimum, prixMaximum }: { prixMinimum: number; prixMaximum: number }) => {
         setPrixMinimum(prixMinimum);
         setPrixMaximum(prixMaximum);
